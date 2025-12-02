@@ -35,20 +35,20 @@ Watch Wandermap AI in action:
 
 ---
 
-## Quick Start (3 Steps)
+## Quick Start
 
 ### Prerequisites
 
-You only need **Node.js** installed on your computer.
-- [Download Node.js](https://nodejs.org/) (v18 or higher)
-- npm comes with Node.js automatically
+- **Node.js** v18 or higher ([Download here](https://nodejs.org/))
+- **Cloudflare account** (free) - Required for AI chat features
 
+---
 
 ### Step 1: Get the Code
 
 ```bash
 git clone https://github.com/yourusername/cf_ai_wandermap.git
-cd cf_ai_wandermap
+cd cf_ai_wandermap/wandermap
 ```
 
 ---
@@ -63,7 +63,25 @@ This installs all dependencies including Wrangler (Cloudflare's local dev server
 
 ---
 
-### Step 3: Run
+### Step 3: Authenticate with Cloudflare
+
+```bash
+npx wrangler login
+```
+
+This opens your browser to authorize Wrangler. **Required for AI chat features.**
+
+---
+
+### Step 4: Enable Workers AI
+
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com)
+2. Navigate to **Workers & Pages** → **AI**
+3. Click **Enable Workers AI** (free tier: 10,000 requests/day)
+
+---
+
+### Step 5: Run
 
 ```bash
 npm run dev
