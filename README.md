@@ -103,43 +103,6 @@ The AI understands and shows the route.
 
 ---
 
-## Common Issues
-
-### "Port 8787 already in use"
-
-Another app is using that port. Kill it:
-
-```bash
-# Find and kill the process
-lsof -ti:8787 | xargs kill -9
-
-# Then run again
-npm run dev
-```
-
-### "Cannot find module 'wrangler'"
-
-Install dependencies again:
-
-```bash
-rm -rf node_modules
-npm install
-```
-
-### Page is blank
-
-1. Make sure `npm run dev` is running
-2. Go to `http://localhost:8787` (not https)
-3. Check browser console (F12) for errors
-
-### Route not showing
-
-- Use full location names: "Los Angeles, CA" not "LA"
-- Wait a moment for geocoding
-- Check your internet connection (uses OpenStreetMap API)
-
----
-
 ## Project Structure
 
 ```
@@ -156,28 +119,6 @@ wandermap/
 
 ---
 
-## Deploy Online (Optional)
-
-### 1. Create Cloudflare Account
-Sign up at [dash.cloudflare.com](https://dash.cloudflare.com)
-
-### 2. Login
-```bash
-npx wrangler login
-```
-
-### 3. Enable Workers AI
-Go to **Workers & Pages** → **AI** → Click **Enable**
-
-### 4. Deploy
-```bash
-npm run deploy
-```
-
-You'll get a URL like: `https://wandermap.your-name.workers.dev`
-
----
-
 ## Example Usage
 
 **Quick Route:**
@@ -190,35 +131,16 @@ Mode: Driving
 
 **Natural Language:**
 ```
-User: "Take me from San Francisco to Los Angeles"
+User: "Show me a route from San Francisco to Los Angeles"
 AI: "I found a route! The journey is 383 mi and takes about 6h 15m."
 → Map updates with the route
 ```
 
 ---
 
-## Development
-
-### Watch Logs
-```bash
-npx wrangler tail
-```
-
-### Hot Reload
-Just save your files—Wrangler auto-reloads:
-- `src/worker.ts` - Backend changes
-- `public/index.html` - Frontend changes
-
-### Debug WebSocket
-1. Open DevTools (F12)
-2. **Network** tab → **WS** filter
-3. See real-time messages
-
----
-
 ## Future Improvements (Not Implemented)
 
-Based on development process, these could be added:
+Based on current implementation, I am planning to add:
 
 1. **Scenic Route Preferences** - User can specify "coastal", "mountain", "urban"
 2. **Multi-Stop Routes** - Add waypoints between start and end
