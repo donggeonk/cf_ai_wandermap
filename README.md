@@ -12,10 +12,9 @@ Watch Wandermap AI in action:
 
 [![Wandermap AI Demo Video](https://img.youtube.com/vi/C76aJ7HIGP0/maxresdefault.jpg)](https://youtu.be/C76aJ7HIGP0)
 
-**[▶Watch Demo on YouTube](https://youtu.be/C76aJ7HIGP0)**
+**[Watch Demo on YouTube](https://youtu.be/C76aJ7HIGP0)**
 
 ---
-
 
 ## Features
 
