@@ -6,6 +6,17 @@ Wandermap AI is an intelligent route planning application that helps you discove
 
 ![Wandermap AI Demo](https://img.shields.io/badge/Built%20with-Cloudflare%20Workers%20AI-orange)
 
+## Demo Video
+
+Watch Wandermap AI in action:
+
+[![Wandermap AI Demo Video](https://img.youtube.com/vi/C76aJ7HIGP0/maxresdefault.jpg)](https://youtu.be/C76aJ7HIGP0)
+
+**[▶Watch Demo on YouTube](https://youtu.be/C76aJ7HIGP0)**
+
+---
+
+
 ## Features
 
 - **AI-Powered Route Planning** - Natural language understanding for route preferences
